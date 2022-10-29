@@ -1,3 +1,14 @@
+// $(window).keyup(function(e){
+// 	var target = $('.quiz__radio-btn input:focus');
+// 	if (e.keyCode == 9 && $(target).length){
+// 		$(target).parent().addClass('focused');
+// 	}
+// });
+//
+// $('.checkbox-btn input').focusout(function(){
+// 	$(this).parent().removeClass('focused');
+// });
+
 // Menu Burger
 const iconMenu = document.querySelector(".menu__icon");
 const menuBody = document.querySelector(".menu__body");
