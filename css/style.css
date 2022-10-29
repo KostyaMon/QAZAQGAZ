@@ -314,68 +314,167 @@ a, button {
   .our-pride .our-pride__mobile {
     margin-top: -136px; }
 
-.main-tasks {
+.main-tasks .main-tasks__body {
+  display: flex;
   background: #1D30BB;
   position: relative;
   z-index: 2;
   border-radius: 15px 0 0 15px;
   margin-top: -494px;
-  min-height: 494px; }
-  .main-tasks .main-tasks__body {
-    display: flex; }
-  .main-tasks .main-tasks__part1, .main-tasks .main-tasks__part2, .main-tasks .main-tasks__part3 {
-    flex-basis: 33.333%;
-    padding: 36px 12.5px 35px; }
-  .main-tasks .main-tasks__part1 {
-    font-size: 2rem; }
-  .main-tasks .main-tasks__h2, .main-tasks .main-tasks__tasks .main-tasks__text {
-    line-height: 2.4rem; }
-  .main-tasks .main-tasks__h2 {
-    margin: 5px 0 20px; }
-  .main-tasks .main-tasks__text {
-    margin-bottom: 12px; }
-  .main-tasks .main-tasks__list {
-    margin-bottom: 28px; }
-  .main-tasks .main-tasks__item {
-    line-height: 140%; }
-  .main-tasks .main-tasks__chairman {
-    line-height: 2rem; }
-    .main-tasks .main-tasks__chairman p {
-      margin-bottom: 10px; }
-      .main-tasks .main-tasks__chairman p:last-child {
-        margin-bottom: 0; }
-    .main-tasks .main-tasks__chairman .main-tasks__text {
-      font-size: 1.6rem; }
-  .main-tasks .main-tasks__chairman-name {
-    font-weight: 700; }
-  .main-tasks .main-tasks__part2 img {
+  min-height: 494px;
+  padding: 36px 0 35px; }
+
+.main-tasks .main-tasks__part1, .main-tasks .main-tasks__part2, .main-tasks .main-tasks__part3 {
+  flex-basis: 33.333%;
+  padding: 0 12.5px; }
+
+.main-tasks .main-tasks__part1 {
+  padding-left: 15px;
+  font-size: 2rem; }
+
+.main-tasks .main-tasks__h2, .main-tasks .main-tasks__tasks .main-tasks__text {
+  line-height: 2.4rem; }
+
+.main-tasks .main-tasks__h2 {
+  max-width: 500px;
+  margin: 5px auto 20px; }
+
+.main-tasks .main-tasks__objectives {
+  margin-bottom: 12px; }
+
+.main-tasks .main-tasks__tasks-body {
+  display: flex; }
+
+.main-tasks .main-tasks__img-wrap {
+  display: none;
+  margin-right: 18px; }
+
+.main-tasks .main-tasks__list {
+  margin-bottom: 28px; }
+
+.main-tasks .main-tasks__item {
+  padding-left: 17px;
+  line-height: 140%;
+  position: relative; }
+  .main-tasks .main-tasks__item:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 5px;
+    height: 5px;
     display: block;
-    border-radius: 16px; }
-  .main-tasks .main-tasks__part3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.6rem;
-    line-height: 3.2rem;
-    text-align: center; }
-  .main-tasks .main-tasks__access {
-    margin-bottom: 40px;
-    max-width: 372px; }
-    .main-tasks .main-tasks__access span {
-      font-weight: 700; }
-  .main-tasks .main-tasks__button {
-    background: linear-gradient(265.37deg, #02E9B0 -13.83%, #24B0FF 115.1%);
+    background: #fff;
+    border-radius: 50%; }
+
+.main-tasks .main-tasks__chairman {
+  line-height: 2rem; }
+  .main-tasks .main-tasks__chairman p {
+    margin-bottom: 10px; }
+    .main-tasks .main-tasks__chairman p:last-child {
+      margin-bottom: 0; }
+
+.main-tasks .main-tasks__text {
+  font-size: 1.6rem; }
+
+.main-tasks .main-tasks__chairman-name {
+  font-size: 2rem;
+  font-weight: 700; }
+
+.main-tasks .main-tasks__img {
+  display: block;
+  border-radius: 16px;
+  max-width: 386px;
+  max-height: 423px;
+  height: 100%;
+  object-fit: cover;
+  width: 100%; }
+
+.main-tasks .main-tasks__part3 {
+  padding-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.6rem;
+  line-height: 3.2rem;
+  text-align: center; }
+
+.main-tasks .main-tasks__access {
+  margin-bottom: 40px;
+  max-width: 372px; }
+  .main-tasks .main-tasks__access span {
+    font-weight: 700; }
+
+.main-tasks .main-tasks__button {
+  margin: 0 auto;
+  text-align: center; }
+  .main-tasks .main-tasks__button a {
     border: 3px solid #203874;
+    background: linear-gradient(265.37deg, #02E9B0 -13.83%, #24B0FF 115.1%);
     box-shadow: inset 14px -12px 14px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
+    display: block;
+    padding: 22px 0;
     max-width: 388px;
-    margin: 0 auto;
+    width: 100%;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+    color: #fff; }
+    .main-tasks .main-tasks__button a:hover {
+      color: #000;
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), linear-gradient(267.57deg, #48DDB8 0%, #3B51E0 100%); }
+
+@media (max-width: 1200px) {
+  .main-tasks .main-tasks__body {
+    min-height: auto;
+    padding-bottom: 50px; }
+  .main-tasks .main-tasks__h2 {
     text-align: center;
-    padding: 22px 0; }
-    .main-tasks .main-tasks__button a {
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-      text-transform: uppercase;
-      color: #fff; }
+    margin-bottom: 25px; }
+  .main-tasks .main-tasks__part1 {
+    flex-basis: 66.666%; }
+  .main-tasks .main-tasks__part2 {
+    display: none; }
+  .main-tasks .main-tasks__part3 {
+    flex-basis: 33.333%; }
+  .main-tasks .main-tasks__img {
+    max-height: 285px; }
+  .main-tasks .main-tasks__img-wrap {
+    display: block; }
+  .main-tasks .main-tasks__objectives {
+    font-weight: 600; }
+  .main-tasks .main-tasks__chairman {
+    padding-left: 17px; }
+  .main-tasks .main-tasks__access {
+    font-size: 2.4rem; } }
+
+@media (max-width: 992px) {
+  .main-tasks .main-tasks__body {
+    flex-wrap: wrap;
+    border-radius: 0; }
+  .main-tasks .main-tasks__part1, .main-tasks .main-tasks__part3 {
+    flex-basis: 100%; }
+  .main-tasks .main-tasks__part1 {
+    order: 3; }
+  .main-tasks .main-tasks__part3 {
+    order: 1;
+    margin: 40px 0 65px; }
+  .main-tasks .main-tasks__h2 {
+    max-width: 400px; }
+  .main-tasks .main-tasks__h2, .main-tasks .main-tasks__part1, .main-tasks .main-tasks__chairman-name {
+    font-size: 1.6rem; }
+  .main-tasks .main-tasks__item:before {
+    top: 8px; } }
+
+@media (max-width: 480px) {
+  .main-tasks .main-tasks__h2 {
+    margin-bottom: 12px; }
+  .main-tasks .main-tasks__h2, .main-tasks .main-tasks__part1, .main-tasks .main-tasks__text, .main-tasks .main-tasks__chairman-name {
+    font-size: 1.4rem; }
+  .main-tasks .main-tasks__list {
+    margin-bottom: 22px; }
+  .main-tasks .main-tasks__item:before {
+    top: 6px; } }
 
 .footer .footer__body {
   max-width: 1108px;
