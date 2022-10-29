@@ -301,7 +301,7 @@ a, button {
     border: 3px solid #104984;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
     border-radius: 12px;
-    padding: 53px 15px 53px 45px;
+    padding: 50px 15px 50px 43px;
     margin: -78px 0 529px;
     max-width: 750px; }
   .our-pride .our-pride__text {
@@ -315,11 +315,13 @@ a, button {
     margin-top: -136px; }
 
 .main-tasks .main-tasks__body {
-  display: flex;
   background: #1D30BB;
   position: relative;
   z-index: 2;
-  border-radius: 15px 0 0 15px;
+  border-radius: 15px 0 0 15px; }
+
+.main-tasks .main-tasks__body-wrap {
+  display: flex;
   margin-top: -494px;
   min-height: 494px;
   padding: 36px 0 35px; }
@@ -425,7 +427,7 @@ a, button {
       background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), linear-gradient(267.57deg, #48DDB8 0%, #3B51E0 100%); }
 
 @media (max-width: 1200px) {
-  .main-tasks .main-tasks__body {
+  .main-tasks .main-tasks__body-wrap {
     min-height: auto;
     padding-bottom: 50px; }
   .main-tasks .main-tasks__h2 {
@@ -449,7 +451,7 @@ a, button {
     font-size: 2.4rem; } }
 
 @media (max-width: 992px) {
-  .main-tasks .main-tasks__body {
+  .main-tasks .main-tasks__body-wrap {
     flex-wrap: wrap;
     border-radius: 0; }
   .main-tasks .main-tasks__part1, .main-tasks .main-tasks__part3 {
@@ -459,10 +461,9 @@ a, button {
   .main-tasks .main-tasks__part3 {
     order: 1;
     margin: 40px 0 65px; }
-  .main-tasks .main-tasks__h2 {
-    max-width: 400px; }
-  .main-tasks .main-tasks__h2, .main-tasks .main-tasks__part1, .main-tasks .main-tasks__chairman-name {
-    font-size: 1.6rem; }
+  .main-tasks .main-tasks__img {
+    max-height: 100%;
+    max-width: 320px; }
   .main-tasks .main-tasks__item:before {
     top: 8px; } }
 
