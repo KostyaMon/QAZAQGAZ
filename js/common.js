@@ -1,4 +1,15 @@
-//=================== Custom, temporary
+let menuArrows = document.querySelectorAll('.menu__arrow');
+
+if (menuArrows.length > 0) {
+	for (let i = 0; i < menuArrows.length; i++) {
+		const menuArrow = menuArrows[i];
+		menuArrow.addEventListener("click", () => {
+			menuArrow.parentElement.classList.toggle('_active');
+		});
+	}
+}
+
+//=================== Cap, temporary
 // const DATA = [
 // 	{
 // 		question: 'Question 1',
@@ -77,6 +88,7 @@ step5Btn.addEventListener('click', () => {
 	step5.classList.remove("quiz_open");
 	document.body.classList.remove("_lock");
 	quiz.classList.remove("quizzes_open");
+	// alert("Мы скоро с вами свяжемся")
 })
 
 //=================================================
