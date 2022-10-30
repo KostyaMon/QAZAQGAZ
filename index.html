@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="css/style.css" />
 
 	</head>
-	<body>
+	<body class="_lock">
 		<div class="wrapper">
 			<header class="header">
 				<div class="header__body">
@@ -450,16 +450,30 @@
 				<!--		end step 5		-->
 
 				<!--		form		-->
-				<form action="#" id="quiz__form" class="quiz quiz__form" style="background-image: url(img/interview-bg6.jpg)">
+				<form action="#" method="post" enctype="multipart/form-data" id="quiz__form" class="quiz quiz__form" style="background-image: url(img/interview-bg6.jpg)">
 					<div class="quiz__body">
 						<div class="quiz__logo">
 							<img src="img/logo2.png" alt="logo">
 						</div>
 						<div class="quiz__question">Для нас важен каждый наш клиент! </div>
 						<div class="quiz__text">Чтобы продолжить – заполните форму ниже и ожидайте звонка от нашего менеджера.</div>
-						<div class="quiz__answers"></div>
-						<div class="quiz__stage">
-							<button class="quiz__btn-next">ЗАРЕГИСТИРОВАТЬСЯ</button>
+						<div class="quiz__fields">
+							<div class="quiz__input">
+								<input id="name" type="text" name="" value="" placeholder="Имя:">
+							</div>
+							<div class="quiz__input">
+								<input id="surname" type="text" name="" value="" placeholder="Фамилия:">
+							</div>
+							<div class="quiz__input">
+								<input id="email" type="email" name="" value="" placeholder="Email:">
+							</div>
+							<div class="quiz__input">
+								<input id="phone" type="number" name="" value="" placeholder="Телефон:">
+							</div>
+						</div>
+						<div class="quiz__submit">
+							<button class="quiz__btn-submit">ЗАРЕГИСТИРОВАТЬСЯ</button>
+							<div class="quiz__submit-text">Пожалуйста, оставайтесь на связи до звонка менеджера.</div>
 						</div>
 					</div>
 				</form>

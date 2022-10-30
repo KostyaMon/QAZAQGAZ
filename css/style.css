@@ -545,7 +545,6 @@ a, button {
   margin-bottom: 12px; }
 
 .quizzes {
-  display: none;
   position: absolute;
   left: 0;
   right: 0;
@@ -647,14 +646,14 @@ a, button {
   .quiz .quiz__ellipse_full {
     border: none;
     background-image: linear-gradient(transparent, transparent), linear-gradient(267.57deg, #48DDB8 0%, #3B51E0 100%); }
-  .quiz .quiz__btn-next {
+  .quiz .quiz__btn-next, .quiz .quiz__btn-submit {
     font-weight: 700;
     font-size: 1.8rem;
     color: #fff;
     padding: 14px 63px 13px 62px;
     background: linear-gradient(267.57deg, #48DDB8 0%, #3B51E0 100%);
     border-radius: 12px; }
-    .quiz .quiz__btn-next:hover {
+    .quiz .quiz__btn-next:hover, .quiz .quiz__btn-submit:hover {
       color: #000;
       background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), linear-gradient(267.57deg, #48DDB8 0%, #3B51E0 100%); }
   @media (max-width: 480px) {
@@ -744,10 +743,64 @@ a, button {
 .quiz__form .quiz__question, .quiz__form .quiz__text {
   max-width: 430px; }
 
+.quiz__form .quiz__question, .quiz__form .quiz__text {
+  max-width: 460px; }
+
 .quiz__form .quiz__question {
+  font-size: 2.4rem;
   margin-bottom: 14px; }
 
 .quiz__form .quiz__text {
-  margin: 0 auto 32px;
+  margin: 0 auto 23px;
   font-size: 1.8rem;
-  line-height: 130%; }
+  line-height: 130%;
+  padding: 0 15px; }
+
+.quiz__form .quiz__fields {
+  margin: 0 15px 24px; }
+
+.quiz__form .quiz__input input, .quiz__form .quiz__btn-submit {
+  display: block;
+  margin: 0 auto;
+  max-width: 425px;
+  width: 100%; }
+
+.quiz__form .quiz__input {
+  padding-bottom: 14px; }
+  .quiz__form .quiz__input:last-child {
+    padding-bottom: 0; }
+  .quiz__form .quiz__input input {
+    transition: opacity 0.3s ease;
+    padding: 13px 13px;
+    background: rgba(255, 255, 255, 0.4);
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 5px; }
+    .quiz__form .quiz__input input::placeholder {
+      text-align: center;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+      font-size: 1.4rem;
+      color: #000;
+      line-height: 130%;
+      font-weight: 400; }
+    .quiz__form .quiz__input input:focus::placeholder {
+      color: transparent;
+      opacity: 0;
+      transition: opacity 0.3s ease; }
+
+.quiz__form .quiz__submit {
+  margin: 0 15px; }
+
+.quiz__form .quiz__btn-submit {
+  padding: 13px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  font-size: 1.6rem;
+  margin-bottom: 16px; }
+
+.quiz__form .quiz__submit-text {
+  font-size: 1.3rem;
+  line-height: 130%;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 15px 45px; }
