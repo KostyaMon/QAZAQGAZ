@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 html, body {
   font-size: 10px; }
 
-body.popup-lock, body._lock {
+body._lock {
   overflow: hidden; }
 
 body._lock .header__wrap {
@@ -546,8 +546,8 @@ a, button {
 
 .quizzes {
   position: fixed;
+  top: 0;
   left: 0;
-  right: 0;
   width: 100%;
   height: 100%;
   z-index: 10;
@@ -563,6 +563,7 @@ a, button {
   justify-content: center;
   align-items: center; }
   .quiz .quiz__body {
+    overflow-y: auto;
     margin: 0 16px;
     max-width: 793px;
     width: 100%;
@@ -676,11 +677,6 @@ a, button {
       height: 16px; }
     .quiz .quiz__btn-next {
       padding: 13px 31px 14px 31px; } }
-
-._display-none {
-  display: none;
-  opacity: 0;
-  visibility: hidden; }
 
 .step1 .quiz__answers {
   display: flex;
@@ -810,3 +806,24 @@ a, button {
   line-height: 130%;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0 15px 45px; }
+
+.quizzes, .quiz__form {
+  opacity: 0;
+  visibility: hidden; }
+
+.step1, .step2, .step3, .step4, .step5 {
+  display: none;
+  opacity: 0;
+  visibility: hidden; }
+
+.form_close {
+  display: none; }
+
+.quizzes_open, .form_open {
+  opacity: 1;
+  visibility: visible; }
+
+.quiz_open {
+  display: flex;
+  opacity: 1;
+  visibility: visible; }

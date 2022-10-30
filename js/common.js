@@ -1,15 +1,15 @@
 //=================== Custom, temporary
-const DATA = [
-	{
-		question: 'Question 1',
-		answer: [
-			{
-				id: '0',
-				value: 'answer 1'
-			}
-		]
-	}
-];
+// const DATA = [
+// 	{
+// 		question: 'Question 1',
+// 		answer: [
+// 			{
+// 				id: '0',
+// 				value: 'answer 1'
+// 			}
+// 		]
+// 	}
+// ];
 
 const quiz = document.getElementById('quizzes');
 const quizForm = document.getElementById('quiz__form');
@@ -23,7 +23,7 @@ const step4 = document.getElementById('quiz__step4');
 const step4Btn = document.getElementById('step4-btn');
 const step5 = document.getElementById('quiz__step5');
 const step5Btn = document.getElementById('step5-btn');
-const quizQuestion = document.getElementById('quiz__question');
+// const quizQuestion = document.getElementById('quiz__question');
 
 const quizBtbStart = document.getElementById('quiz__btn-start');
 const quizBtnSubmit = document.getElementById('quiz__btn-submit');
@@ -40,41 +40,43 @@ quiz.addEventListener('change', () => {
 quizBtbStart.addEventListener('click', (e) => {
 	e.preventDefault()
 	document.body.classList.toggle("_lock");
-	quiz.classList.remove("_display-none");
-	quizForm.classList.remove("_display-none");
+	quizForm.classList.remove("form_close");
+	quiz.classList.add("quizzes_open");
+	quizForm.classList.add("form_open");
 });
 
 quizBtnSubmit.addEventListener('click', (e) => {
 	e.preventDefault()
-	quizForm.classList.toggle("_display-none");
-	step1.classList.remove("_display-none");
+	quizForm.classList.remove("form_open");
+	quizForm.classList.toggle("form_close");
+	step1.classList.toggle("quiz_open");
 });
 
 step1Btn.addEventListener('click', (e) => {
 	e.preventDefault()
-	step1.classList.toggle("_display-none");
-	step2.classList.remove("_display-none");
+	step1.classList.remove("quiz_open");
+	step2.classList.toggle("quiz_open");
 })
 
 step2Btn.addEventListener('click', () => {
-	step2.classList.toggle("_display-none");
-	step3.classList.remove("_display-none");
+	step2.classList.remove("quiz_open");
+	step3.classList.toggle("quiz_open");
 })
 
 step3Btn.addEventListener('click', () => {
-	step3.classList.toggle("_display-none");
-	step4.classList.remove("_display-none");
+	step3.classList.remove("quiz_open");
+	step4.classList.toggle("quiz_open");
 })
 
 step4Btn.addEventListener('click', () => {
-	step4.classList.toggle("_display-none");
-	step5.classList.remove("_display-none");
+	step4.classList.remove("quiz_open");
+	step5.classList.toggle("quiz_open");
 })
-
+//
 step5Btn.addEventListener('click', () => {
-	step5.classList.toggle("_display-none");
+	step5.classList.remove("quiz_open");
 	document.body.classList.remove("_lock");
-	quiz.classList.toggle("_display-none");
+	quiz.classList.remove("quizzes_open");
 })
 
 //=================================================
