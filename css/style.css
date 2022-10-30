@@ -545,19 +545,19 @@ a, button {
   margin-bottom: 12px; }
 
 .quizzes {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   width: 100%;
   height: 100%;
   z-index: 10;
   overflow-y: auto;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  transition: all 0.3s ease 0s; }
 
 .quiz {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  width: 100%;
-  height: 100%;
+  min-height: 100%;
   background: no-repeat center/cover;
   display: flex;
   justify-content: center;
@@ -639,7 +639,11 @@ a, button {
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    border: 2px blue solid;
+    border: 2px transparent solid;
+    background-image: linear-gradient(#e5e1e5, #e5e1e5), linear-gradient(267.57deg, #48DDB8 0%, #3B51E0 100%);
+    border-image-slice: 1;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
     z-index: 1; }
     .quiz .quiz__ellipse:last-child {
       margin-right: 0; }
@@ -673,8 +677,10 @@ a, button {
     .quiz .quiz__btn-next {
       padding: 13px 31px 14px 31px; } }
 
-.step1, .step2, .step3, .step4, .step5 {
-  display: none; }
+._display-none {
+  display: none;
+  opacity: 0;
+  visibility: hidden; }
 
 .step1 .quiz__answers {
   display: flex;

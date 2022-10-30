@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="css/style.css" />
 
 	</head>
-	<body class="_lock">
+	<body>
 		<div class="wrapper">
 			<header class="header">
 				<div class="header__body">
@@ -127,7 +127,7 @@
 								<div class="main-tasks__part3-wrap">
 									<div class="main-tasks__access">Все что требуется - уделить 1,5 минуты на тест и вам станут доступны инвестиции <span>QazaqGaz</span></div>
 									<div class="main-tasks__button">
-										<a href="#">НАЧАТЬ ТЕСТ</a>
+										<a id="quiz__btn-start" href="#">НАЧАТЬ ТЕСТ</a>
 									</div>
 								</div>
 							</div>
@@ -157,10 +157,10 @@
 			</footer>
 
 			<!--quizzes-->
-			<div class="quizzes">
+			<div id="quizzes" class="quizzes _display-none">
 
 				<!--		step1		-->
-				<div id="quiz__step1" class="quiz step1" style="background-image: url(img/interview-bg1.jpg)">
+				<div id="quiz__step1" class="quiz step1 _display-none" style="background-image: url(img/interview-bg1.jpg)">
 					<div class="quiz__body">
 						<div class="quiz__logo">
 							<img src="img/logo2.png" alt="logo">
@@ -225,7 +225,7 @@
 								</div>
 
 								<div class="quiz__control">
-									<button class="quiz__btn-next">Выбрать</button>
+									<button id="step1-btn" class="quiz__btn-next">Выбрать</button>
 								</div>
 							</div>
 						</div>
@@ -234,7 +234,7 @@
 				<!--		end step 1		-->
 
 				<!--		step2		-->
-				<div id="quiz__step2" class="quiz step2" style="background-image: url(img/interview-bg2.jpg)">
+				<div id="quiz__step2" class="quiz step2 _display-none" style="background-image: url(img/interview-bg2.jpg)">
 					<div class="quiz__body">
 						<div class="quiz__logo">
 							<img src="img/logo2.png" alt="logo">
@@ -282,7 +282,7 @@
 								</div>
 
 								<div class="quiz__control">
-									<button class="quiz__btn-next">Выбрать</button>
+									<button id="step2-btn"   class="quiz__btn-next">Выбрать</button>
 								</div>
 							</div>
 						</div>
@@ -291,7 +291,7 @@
 				<!--		end step 2		-->
 
 				<!--		step3		-->
-				<div id="quiz__step3" class="quiz step3" style="background-image: url(img/interview-bg3.jpg)">
+				<div id="quiz__step3" class="quiz step3 _display-none" style="background-image: url(img/interview-bg3.jpg)">
 					<div class="quiz__body">
 						<div class="quiz__logo">
 							<img src="img/logo2.png" alt="logo">
@@ -339,7 +339,7 @@
 								</div>
 
 								<div class="quiz__control">
-									<button class="quiz__btn-next">Выбрать</button>
+									<button id="step3-btn" class="quiz__btn-next">Выбрать</button>
 								</div>
 							</div>
 						</div>
@@ -348,7 +348,7 @@
 				<!--		end step 3		-->
 
 				<!--		step4		-->
-				<div id="quiz__step4" class="quiz step4" style="background-image: url(img/interview-bg4.jpg)">
+				<div id="quiz__step4" class="quiz step4 _display-none" style="background-image: url(img/interview-bg4.jpg)">
 					<div class="quiz__body">
 						<div class="quiz__logo">
 							<img src="img/logo2.png" alt="logo">
@@ -396,7 +396,7 @@
 								</div>
 
 								<div class="quiz__control">
-									<button class="quiz__btn-next">Выбрать</button>
+									<button id="step4-btn" class="quiz__btn-next">Выбрать</button>
 								</div>
 							</div>
 						</div>
@@ -405,7 +405,7 @@
 				<!--		end step 4		-->
 
 				<!--		step5		-->
-				<div id="quiz__step5" class="quiz step5" style="background-image: url(img/interview-bg5.jpg)">
+				<div id="quiz__step5" class="quiz step5 _display-none" style="background-image: url(img/interview-bg5.jpg)">
 					<div class="quiz__body">
 						<div class="quiz__logo">
 							<img src="img/logo2.png" alt="logo">
@@ -441,7 +441,7 @@
 								</div>
 
 								<div class="quiz__control">
-									<button class="quiz__btn-next">Выбрать</button>
+									<button id="step5-btn" class="quiz__btn-next">Выбрать</button>
 								</div>
 							</div>
 						</div>
@@ -450,7 +450,7 @@
 				<!--		end step 5		-->
 
 				<!--		form		-->
-				<form action="#" method="post" enctype="multipart/form-data" id="quiz__form" class="quiz quiz__form" style="background-image: url(img/interview-bg6.jpg)">
+				<form id="quiz__form" class="quiz quiz__form" action="#" method="post" enctype="multipart/form-data"  style="background-image: url(img/interview-bg6.jpg)">
 					<div class="quiz__body">
 						<div class="quiz__logo">
 							<img src="img/logo2.png" alt="logo">
@@ -468,11 +468,11 @@
 								<input id="email" type="email" name="" value="" placeholder="Email:">
 							</div>
 							<div class="quiz__input">
-								<input id="phone" type="number" name="" value="" placeholder="Телефон:">
+								<input id="phone" type="tel" name="" value="" placeholder="Телефон:">
 							</div>
 						</div>
 						<div class="quiz__submit">
-							<button class="quiz__btn-submit">ЗАРЕГИСТИРОВАТЬСЯ</button>
+							<button id="quiz__btn-submit" type="submit" class="quiz__btn-submit">ЗАРЕГИСТИРОВАТЬСЯ</button>
 							<div class="quiz__submit-text">Пожалуйста, оставайтесь на связи до звонка менеджера.</div>
 						</div>
 					</div>
