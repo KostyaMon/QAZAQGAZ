@@ -598,16 +598,17 @@ a, button {
   text-align: center;
   padding-bottom: 34px; }
 
+.footer .swiper-slide {
+  width: auto; }
+
 .footer .footer__companies {
   margin-bottom: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap; }
+  justify-content: center; }
 
-.footer .footer__img {
-  max-height: 104px;
-  display: block; }
+.footer .footer__img-wrap {
+  min-width: 0; }
 
 .footer .footer__info {
   margin: 0 15px;
