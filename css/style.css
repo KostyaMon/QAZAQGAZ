@@ -113,13 +113,17 @@ a, button {
     margin: 22px 0 16px 0; }
   .header .header__h1-wrap {
     display: flex;
-    justify-content: center;
+    margin-left: 185px;
     flex-grow: 1; }
   .header .header__h1 {
     font-weight: 700;
     font-size: 2.6rem;
     line-height: 32px;
     text-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25); }
+  @media (max-width: 1800px) {
+    .header .header__h1-wrap {
+      margin-left: 0;
+      justify-content: center; } }
   @media (max-width: 1500px) {
     .header .header__skyscraper2 {
       display: none; }
@@ -334,6 +338,9 @@ a, button {
   @media (max-width: 992px) {
     .content__body {
       margin-top: 0; } }
+  @media (max-width: 480px) {
+    .content__body {
+      margin-bottom: 40px; } }
 
 .content__h1-992px .content__h1-992px-wrap {
   margin-top: -1px;
@@ -597,17 +604,30 @@ a, button {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap; }
-  .footer .footer__companies img {
-    max-height: 104px;
-    display: block; }
+
+.footer .footer__img {
+  max-height: 104px;
+  display: block; }
 
 .footer .footer__info {
+  margin: 0 15px;
   font-size: 1.4rem;
   line-height: 1.7rem;
   color: #777777; }
 
 .footer .footer__text {
   margin-bottom: 12px; }
+
+@media (max-width: 480px) {
+  .footer .footer__body {
+    padding-bottom: 29px; }
+  .footer .footer__companies {
+    margin-bottom: 16px; }
+  .footer .footer__img {
+    max-height: 42px; }
+  .footer .footer__info {
+    font-size: 1rem;
+    line-height: 1.2rem; } }
 
 .quizzes {
   position: fixed;
