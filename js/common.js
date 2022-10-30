@@ -18,18 +18,6 @@ new Swiper('.swiper', {
 // }
 
 //=================== Cap, temporary
-// const DATA = [
-// 	{
-// 		question: 'Question 1',
-// 		answer: [
-// 			{
-// 				id: '0',
-// 				value: 'answer 1'
-// 			}
-// 		]
-// 	}
-// ];
-
 const quiz = document.getElementById('quizzes');
 const quizForm = document.getElementById('quiz__form');
 const step1 = document.getElementById('quiz__step1');
