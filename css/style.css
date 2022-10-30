@@ -724,18 +724,25 @@ a, button {
     position: relative;
     margin-right: 8px;
     width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    border: 2px transparent solid;
-    background-image: linear-gradient(#e5e1e5, #e5e1e5), linear-gradient(267.57deg, #48DDB8 0%, #3B51E0 100%);
-    border-image-slice: 1;
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    z-index: 1; }
+    height: 18px; }
+    .quiz .quiz__ellipse::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 2px transparent solid;
+      border-radius: 50%;
+      background: linear-gradient(267.57deg, #48DDB8 0%, #3B51E0 100%) border-box;
+      -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude; }
     .quiz .quiz__ellipse:last-child {
       margin-right: 0; }
   .quiz .quiz__ellipse_full {
     border: none;
+    border-radius: 50%;
     background-image: linear-gradient(transparent, transparent), linear-gradient(267.57deg, #48DDB8 0%, #3B51E0 100%); }
   .quiz .quiz__btn-next, .quiz .quiz__btn-submit {
     font-weight: 700;
