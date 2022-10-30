@@ -285,17 +285,19 @@ a, button {
 @media (max-width: 992px) {
   .content__h1-992px .content__h1-992px-wrap {
     display: block;
-    margin-bottom: 158px; } }
+    margin-bottom: 88px; } }
 
 .our-pride {
   min-height: 777px;
   background: linear-gradient(183.68deg, #1D30BB 4.24%, rgba(29, 48, 187, 0) 61.57%); }
   .our-pride .our-pride__body {
+    max-width: 1546px;
+    margin: 0 auto;
     display: flex;
     gap: 15px;
     justify-content: space-between; }
   .our-pride .our-pride__declaration {
-    flex-basis: 51.299%; }
+    flex-basis: 52.299%; }
   .our-pride .our-pride__declaration-body {
     background: #fff;
     border: 3px solid #104984;
@@ -303,7 +305,7 @@ a, button {
     border-radius: 12px;
     padding: 50px 15px 50px 43px;
     margin: -78px 0 529px;
-    max-width: 750px; }
+    max-width: 742px; }
   .our-pride .our-pride__text {
     font-size: 26px;
     line-height: 32px;
@@ -312,7 +314,48 @@ a, button {
     .our-pride .our-pride__text:last-child {
       margin-bottom: 0; }
   .our-pride .our-pride__mobile {
+    padding-right: 50px;
     margin-top: -136px; }
+    .our-pride .our-pride__mobile img {
+      max-width: 422.22px; }
+  @media (max-width: 1600px) {
+    .our-pride .our-pride__mobile {
+      padding-right: 0; } }
+  @media (max-width: 992px) {
+    .our-pride .our-pride__body {
+      position: relative; }
+    .our-pride .our-pride__declaration {
+      flex-basis: 100%;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      z-index: 3; }
+    .our-pride .our-pride__declaration-body {
+      border-radius: 6.72301px;
+      padding: 24px 16px;
+      text-align: center;
+      margin: 380px 0 529px; }
+    .our-pride .our-pride__mobile {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      top: 70px; } }
+  @media (max-width: 480px) {
+    .our-pride .our-pride__declaration-body {
+      max-width: 352px;
+      margin: 132px 0 529px; }
+    .our-pride .our-pride__text {
+      font-size: 1.4rem;
+      line-height: 1.7rem; }
+    .our-pride .our-pride__text._bold {
+      font-size: 1.6rem; }
+    .our-pride .our-pride__mobile {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      top: 55px; }
+      .our-pride .our-pride__mobile img {
+        max-width: 186.37px; } }
 
 .main-tasks .main-tasks__body {
   background: #1D30BB;
