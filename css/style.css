@@ -651,7 +651,7 @@ a, button {
   align-items: center; }
   .quiz .quiz__body {
     overflow-y: auto;
-    margin: 0 16px;
+    margin: 15px;
     max-width: 793px;
     width: 100%;
     min-height: 700px;
