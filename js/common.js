@@ -30,7 +30,6 @@ const step4 = document.getElementById('quiz__step4');
 const step4Btn = document.getElementById('step4-btn');
 const step5 = document.getElementById('quiz__step5');
 const step5Btn = document.getElementById('step5-btn');
-// const quizQuestion = document.getElementById('quiz__question');
 
 const quizBtbStart = document.getElementById('quiz__btn-start');
 const quizBtnSubmit = document.getElementById('quiz__btn-submit');
@@ -38,11 +37,6 @@ const quizBtnSubmit = document.getElementById('quiz__btn-submit');
 quiz.addEventListener('change', () => {
 	//logic answers
 })
-
-// quiz.addEventListener('click', (e) => {
-// 	//btn next
-// 	console.log(e)
-// })
 
 quizBtbStart.addEventListener('click', (e) => {
 	e.preventDefault()
@@ -54,29 +48,44 @@ quizBtbStart.addEventListener('click', (e) => {
 
 quizBtnSubmit.addEventListener('click', (e) => {
 	e.preventDefault()
-	quizForm.classList.remove("form_open");
 	quizForm.classList.toggle("form_close");
+	quizForm.classList.remove("form_open");
 	step1.classList.toggle("quiz_open");
 });
 
-step1Btn.addEventListener('click', (e) => {
-	e.preventDefault()
-	step1.classList.remove("quiz_open");
+step1Btn.addEventListener('click', () => {
+	setTimeout(() => {
+		quiz.style.overflowY = 'auto';
+		step1.classList.remove("quiz_open");
+	}, 200)
+	quiz.style.overflowY = 'hidden';
 	step2.classList.toggle("quiz_open");
 })
 
 step2Btn.addEventListener('click', () => {
-	step2.classList.remove("quiz_open");
+	setTimeout(() => {
+		quiz.style.overflowY = 'auto';
+		step2.classList.remove("quiz_open");
+	}, 200)
+	quiz.style.overflowY = 'hidden';
 	step3.classList.toggle("quiz_open");
 })
 
 step3Btn.addEventListener('click', () => {
-	step3.classList.remove("quiz_open");
+	setTimeout(() => {
+		quiz.style.overflowY = 'auto';
+		step3.classList.remove("quiz_open");
+	}, 200)
+	quiz.style.overflowY = 'hidden';
 	step4.classList.toggle("quiz_open");
 })
 
 step4Btn.addEventListener('click', () => {
-	step4.classList.remove("quiz_open");
+	setTimeout(() => {
+		quiz.style.overflowY = 'auto';
+		step4.classList.remove("quiz_open");
+	}, 200)
+	quiz.style.overflowY = 'hidden';
 	step5.classList.toggle("quiz_open");
 })
 //
@@ -86,7 +95,6 @@ step5Btn.addEventListener('click', () => {
 	quiz.classList.remove("quizzes_open");
 	// alert("Мы скоро с вами свяжемся")
 })
-
 //=================================================
 
 // Menu Burger

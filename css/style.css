@@ -639,7 +639,8 @@ a, button {
   z-index: 10;
   overflow-y: auto;
   overflow-x: hidden;
-  transition: all 0.3s ease 0s; }
+  transition: all 0.3s ease 0s;
+  background: rgba(255, 255, 255, 0.7); }
 
 .quiz {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
