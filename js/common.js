@@ -18,83 +18,85 @@ new Swiper('.swiper', {
 // }
 
 //=================== Cap, temporary
-const quiz = document.getElementById('quizzes');
-const quizForm = document.getElementById('quiz__form');
-const step1 = document.getElementById('quiz__step1');
-const step1Btn = document.getElementById('step1-btn');
-const step2 = document.getElementById('quiz__step2');
-const step2Btn = document.getElementById('step2-btn');
-const step3 = document.getElementById('quiz__step3');
-const step3Btn = document.getElementById('step3-btn');
-const step4 = document.getElementById('quiz__step4');
-const step4Btn = document.getElementById('step4-btn');
-const step5 = document.getElementById('quiz__step5');
-const step5Btn = document.getElementById('step5-btn');
+document.addEventListener('DOMContentLoaded', function () {
+	const quiz = document.getElementById('quizzes');
+	const quizForm = document.getElementById('quiz__form');
+	const step1 = document.getElementById('quiz__step1');
+	const step1Btn = document.getElementById('step1-btn');
+	const step2 = document.getElementById('quiz__step2');
+	const step2Btn = document.getElementById('step2-btn');
+	const step3 = document.getElementById('quiz__step3');
+	const step3Btn = document.getElementById('step3-btn');
+	const step4 = document.getElementById('quiz__step4');
+	const step4Btn = document.getElementById('step4-btn');
+	const step5 = document.getElementById('quiz__step5');
+	const step5Btn = document.getElementById('step5-btn');
+	
+	const quizBtbStart = document.getElementById('quiz__btn-start');
+	const quizBtnSubmit = document.getElementById('quiz__btn-submit');
 
-const quizBtbStart = document.getElementById('quiz__btn-start');
-const quizBtnSubmit = document.getElementById('quiz__btn-submit');
-
-quiz.addEventListener('change', () => {
-	//logic answers
-})
-
-quizBtbStart.addEventListener('click', (e) => {
-	e.preventDefault()
-	document.body.classList.toggle("_lock");
-	quizForm.classList.remove("form_close");
-	quiz.classList.add("quizzes_open");
-	quizForm.classList.add("form_open");
-});
-
-quizBtnSubmit.addEventListener('click', (e) => {
-	e.preventDefault()
-	quizForm.classList.toggle("form_close");
-	quizForm.classList.remove("form_open");
-	step1.classList.toggle("quiz_open");
-});
-
-step1Btn.addEventListener('click', () => {
-	setTimeout(() => {
-		quiz.style.overflowY = 'auto';
-		step1.classList.remove("quiz_open");
-	}, 200)
-	quiz.style.overflowY = 'hidden';
-	step2.classList.toggle("quiz_open");
-})
-
-step2Btn.addEventListener('click', () => {
-	setTimeout(() => {
-		quiz.style.overflowY = 'auto';
-		step2.classList.remove("quiz_open");
-	}, 200)
-	quiz.style.overflowY = 'hidden';
-	step3.classList.toggle("quiz_open");
-})
-
-step3Btn.addEventListener('click', () => {
-	setTimeout(() => {
-		quiz.style.overflowY = 'auto';
-		step3.classList.remove("quiz_open");
-	}, 200)
-	quiz.style.overflowY = 'hidden';
-	step4.classList.toggle("quiz_open");
-})
-
-step4Btn.addEventListener('click', () => {
-	setTimeout(() => {
-		quiz.style.overflowY = 'auto';
-		step4.classList.remove("quiz_open");
-	}, 200)
-	quiz.style.overflowY = 'hidden';
-	step5.classList.toggle("quiz_open");
-})
+// quiz.addEventListener('change', () => {
+// 	//logic answers
+// })
+	
+	quizBtbStart.addEventListener('click', (e) => {
+		e.preventDefault()
+		document.body.classList.add("_lock");
+		quizForm.classList.remove("form_close");
+		quiz.classList.add("quizzes_open");
+		quizForm.classList.add("form_open");
+	});
+	
+	quizBtnSubmit.addEventListener('click', (e) => {
+		e.preventDefault()
+		quizForm.classList.add("form_close");
+		quizForm.classList.remove("form_open");
+		step1.classList.add("quiz_open");
+	});
+	
+	step1Btn.addEventListener('click', () => {
+		setTimeout(() => {
+			quiz.style.overflowY = 'auto';
+			step1.classList.remove("quiz_open");
+		}, 200)
+		quiz.style.overflowY = 'hidden';
+		step2.classList.add("quiz_open");
+	})
+	
+	step2Btn.addEventListener('click', () => {
+		setTimeout(() => {
+			quiz.style.overflowY = 'auto';
+			step2.classList.remove("quiz_open");
+		}, 200)
+		quiz.style.overflowY = 'hidden';
+		step3.classList.add("quiz_open");
+	})
+	
+	step3Btn.addEventListener('click', () => {
+		setTimeout(() => {
+			quiz.style.overflowY = 'auto';
+			step3.classList.remove("quiz_open");
+		}, 200)
+		quiz.style.overflowY = 'hidden';
+		step4.classList.add("quiz_open");
+	})
+	
+	step4Btn.addEventListener('click', () => {
+		setTimeout(() => {
+			quiz.style.overflowY = 'auto';
+			step4.classList.remove("quiz_open");
+		}, 200)
+		quiz.style.overflowY = 'hidden';
+		step5.classList.add("quiz_open");
+	})
 //
-step5Btn.addEventListener('click', () => {
-	step5.classList.remove("quiz_open");
-	document.body.classList.remove("_lock");
-	quiz.classList.remove("quizzes_open");
-	// alert("Мы скоро с вами свяжемся")
-})
+	step5Btn.addEventListener('click', () => {
+		step5.classList.remove("quiz_open");
+		document.body.classList.remove("_lock");
+		quiz.classList.remove("quizzes_open");
+		// alert("Мы скоро с вами свяжемся")
+	})
+});
 //=================================================
 
 // Menu Burger
