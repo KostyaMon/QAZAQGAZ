@@ -432,7 +432,7 @@ a, button {
 .main-tasks .main-tasks__body {
   background: #1D30BB;
   position: relative;
-  z-index: 2;
+  z-index: 4;
   border-radius: 15px 0 0 15px; }
 
 .main-tasks .main-tasks__body-wrap {
