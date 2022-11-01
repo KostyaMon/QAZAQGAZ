@@ -61,44 +61,45 @@ document.addEventListener('DOMContentLoaded', function () {
 	step1Btn.addEventListener('click', () => {
 		setTimeout(() => {
 			quiz.style.backgroundImage = "url('img/interview-bg2.jpg')"
-			quiz.style.overflowY = 'auto';
+			// quiz.style.overflowY = 'auto';
 			step1.classList.remove("quiz_open");
 		}, 300)
-		quiz.style.overflowY = 'hidden';
+		// quiz.style.overflowY = 'hidden';
 		step2.classList.add("quiz_open");
 	})
 	
 	step2Btn.addEventListener('click', () => {
 		setTimeout(() => {
 			quiz.style.backgroundImage = "url('img/interview-bg3.jpg')"
-			quiz.style.overflowY = 'auto';
+			// quiz.style.overflowY = 'auto';
 			step2.classList.remove("quiz_open");
 		}, 300)
-		quiz.style.overflowY = 'hidden';
+		// quiz.style.overflowY = 'hidden';
 		step3.classList.add("quiz_open");
 	})
 	
 	step3Btn.addEventListener('click', () => {
 		setTimeout(() => {
 			quiz.style.backgroundImage = "url('img/interview-bg4.jpg')"
-			quiz.style.overflowY = 'auto';
+			// quiz.style.overflowY = 'auto';
 			step3.classList.remove("quiz_open");
 		}, 300)
-		quiz.style.overflowY = 'hidden';
+		// quiz.style.overflowY = 'hidden';
 		step4.classList.add("quiz_open");
 	})
 	
 	step4Btn.addEventListener('click', () => {
 		setTimeout(() => {
 			quiz.style.backgroundImage = "url('img/interview-bg5.jpg')"
-			quiz.style.overflowY = 'auto';
+			// quiz.style.overflowY = 'auto';
 			step4.classList.remove("quiz_open");
 		}, 300)
-		quiz.style.overflowY = 'hidden';
+		// quiz.style.overflowY = 'hidden';
 		step5.classList.add("quiz_open");
 	})
 //
 	step5Btn.addEventListener('click', () => {
+		quiz.style.backgroundImage = "none"
 		document.body.classList.remove("_lock");
 		step5.classList.remove("quiz_open");
 		quiz.classList.remove("quizzes_open");
