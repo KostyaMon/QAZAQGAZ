@@ -19,6 +19,7 @@ new Swiper('.swiper', {
 
 //=================== Cap, temporary
 document.addEventListener('DOMContentLoaded', function () {
+	const body = document.querySelector('body');
 	const quiz = document.getElementById('quizzes');
 	const quizForm = document.getElementById('quiz__form');
 	const step1 = document.getElementById('quiz__step1');
@@ -43,8 +44,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		e.preventDefault()
 		quiz.style.backgroundImage = "url('img/interview-bg1.jpg')"
 		setTimeout(() => {
+			body.style.paddingRight = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
 			document.body.classList.add("_lock");
-			quizForm.classList.remove("form_close");
 			quiz.classList.add("quizzes_open");
 			quizForm.classList.add("form_open");
 		}, 0)
@@ -53,7 +54,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	
 	quizBtnSubmit.addEventListener('click', (e) => {
 		e.preventDefault()
-		quizForm.classList.add("form_close");
 		quizForm.classList.remove("form_open");
 		step1.classList.add("quiz_open");
 	});
@@ -99,10 +99,10 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 //
 	step5Btn.addEventListener('click', () => {
-		step5.classList.remove("quiz_open");
 		document.body.classList.remove("_lock");
+		step5.classList.remove("quiz_open");
 		quiz.classList.remove("quizzes_open");
-		// alert("Мы скоро с вами свяжемся")
+		body.style.paddingRight = '0px';
 	})
 });
 //=================================================

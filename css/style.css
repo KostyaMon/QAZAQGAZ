@@ -639,8 +639,8 @@ a, button {
   z-index: 10;
   overflow-y: auto;
   overflow-x: hidden;
-  transition: all 0.3s ease 0s;
-  background: rgba(255, 255, 255, 0.7) no-repeat center/cover; }
+  background: rgba(255, 255, 255, 0.7) no-repeat center/cover;
+  transition: 0.3s ease 0s; }
 
 .quiz {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -903,7 +903,8 @@ a, button {
 
 .quizzes, .quiz__form {
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  transition: 0.3s ease 0s; }
 
 .step1, .step2, .step3, .step4, .step5 {
   position: absolute;
@@ -912,9 +913,6 @@ a, button {
   opacity: 0;
   visibility: hidden;
   transition: 0.3s ease 0s; }
-
-.form_close {
-  display: none; }
 
 .quizzes_open, .form_open {
   opacity: 1;
