@@ -640,7 +640,7 @@ a, button {
   overflow-y: auto;
   overflow-x: hidden;
   transition: all 0.3s ease 0s;
-  background: rgba(255, 255, 255, 0.7); }
+  background: rgba(255, 255, 255, 0.7) no-repeat center/cover; }
 
 .quiz {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -906,18 +906,23 @@ a, button {
   visibility: hidden; }
 
 .step1, .step2, .step3, .step4, .step5 {
-  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  transition: 0.3s ease 0s; }
 
 .form_close {
   display: none; }
 
 .quizzes_open, .form_open {
   opacity: 1;
-  visibility: visible; }
+  visibility: visible;
+  transition: 0.3s ease 0s; }
 
 .quiz_open {
-  display: flex;
   opacity: 1;
-  visibility: visible; }
+  visibility: visible;
+  transition: 0.3s ease 0s;
+  z-index: 100; }
