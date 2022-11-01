@@ -912,7 +912,9 @@ a, button {
   right: 0;
   opacity: 0;
   visibility: hidden;
-  transition: 0.3s ease 0s; }
+  transition: 0.3s ease 0s;
+  width: 100%;
+  height: 100%; }
 
 .quizzes_open, .form_open {
   opacity: 1;
