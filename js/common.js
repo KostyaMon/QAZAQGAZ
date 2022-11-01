@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	
 	quizBtbStart.addEventListener('click', (e) => {
 		e.preventDefault()
-		quiz.style.backgroundImage = "url('img/interview-bg1.jpg')"
+		quiz.style.backgroundImage = "url('img/interview-bg6.jpg')"
 		setTimeout(() => {
 			body.style.paddingRight = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
 			document.body.classList.add("_lock");
@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	
 	quizBtnSubmit.addEventListener('click', (e) => {
 		e.preventDefault()
+		quiz.style.backgroundImage = "url('img/interview-bg1.jpg')"
 		quizForm.classList.remove("form_open");
 		step1.classList.add("quiz_open");
 	});
@@ -61,40 +62,32 @@ document.addEventListener('DOMContentLoaded', function () {
 	step1Btn.addEventListener('click', () => {
 		setTimeout(() => {
 			quiz.style.backgroundImage = "url('img/interview-bg2.jpg')"
-			// quiz.style.overflowY = 'auto';
 			step1.classList.remove("quiz_open");
 		}, 300)
-		// quiz.style.overflowY = 'hidden';
 		step2.classList.add("quiz_open");
 	})
 	
 	step2Btn.addEventListener('click', () => {
 		setTimeout(() => {
 			quiz.style.backgroundImage = "url('img/interview-bg3.jpg')"
-			// quiz.style.overflowY = 'auto';
 			step2.classList.remove("quiz_open");
 		}, 300)
-		// quiz.style.overflowY = 'hidden';
 		step3.classList.add("quiz_open");
 	})
 	
 	step3Btn.addEventListener('click', () => {
 		setTimeout(() => {
 			quiz.style.backgroundImage = "url('img/interview-bg4.jpg')"
-			// quiz.style.overflowY = 'auto';
 			step3.classList.remove("quiz_open");
 		}, 300)
-		// quiz.style.overflowY = 'hidden';
 		step4.classList.add("quiz_open");
 	})
 	
 	step4Btn.addEventListener('click', () => {
 		setTimeout(() => {
 			quiz.style.backgroundImage = "url('img/interview-bg5.jpg')"
-			// quiz.style.overflowY = 'auto';
 			step4.classList.remove("quiz_open");
 		}, 300)
-		// quiz.style.overflowY = 'hidden';
 		step5.classList.add("quiz_open");
 	})
 //
