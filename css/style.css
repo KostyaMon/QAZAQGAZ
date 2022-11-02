@@ -296,6 +296,15 @@ a, button {
     overflow: auto; }
     .menu .menu__body._menuActive {
       left: 0; }
+  .menu .menu__body_before::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 81px;
+    z-index: 12;
+    background: #1D30BB; }
   .menu .menu__list {
     display: block; }
   .menu .menu__item {

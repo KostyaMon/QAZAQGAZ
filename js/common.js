@@ -109,6 +109,7 @@ if (iconMenu) {
 		document.body.classList.toggle("_lock");
 		iconMenu.classList.toggle("_menuActive");
 		menuBody.classList.toggle("_menuActive");
+		menuBody.classList.toggle("menu__body_before");
 	})
 }
 
