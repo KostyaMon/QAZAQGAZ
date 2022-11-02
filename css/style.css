@@ -165,7 +165,6 @@ a, button {
 
 .menu .menu__item {
   display: flex;
-  text-align: center;
   height: 100%;
   position: relative; }
 
@@ -305,14 +304,16 @@ a, button {
   .menu .menu__i-home {
     display: none; }
   .menu .menu__link {
+    text-align: left;
+    justify-content: flex-start;
     border: none;
-    padding: 15px 28px;
-    font-size: 2rem;
+    padding: 25px 28px;
+    font-size: 2.5rem;
     top: 0;
     transform: translate(0px, 0px); }
   .menu .menu__sub-list {
     position: relative;
-    text-align: center;
+    font-size: 1.6rem;
     opacity: 1;
     visibility: visible;
     pointer-events: all; }
@@ -325,10 +326,11 @@ a, button {
   .menu .menu__item {
     text-align: left; }
   .menu .menu__link {
+    padding: 15px 28px;
     font-size: 1.6rem;
     justify-content: flex-start; }
   .menu .menu__sub-list {
-    text-align: left; } }
+    font-size: 1.4rem; } }
 
 .content {
   flex: 1 1 auto; }
@@ -566,6 +568,8 @@ a, button {
     font-size: 2.4rem; } }
 
 @media (max-width: 992px) {
+  .main-tasks .main-tasks__body {
+    border-radius: 0; }
   .main-tasks .main-tasks__body-wrap {
     flex-wrap: wrap;
     border-radius: 0; }
