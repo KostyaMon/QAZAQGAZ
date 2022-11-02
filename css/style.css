@@ -319,7 +319,8 @@ a, button {
     padding: 25px 28px;
     font-size: 2.5rem;
     top: 0;
-    transform: translate(0px, 0px); }
+    transform: translate(0px, 0px);
+    font-weight: 600; }
   .menu .menu__sub-list {
     position: relative;
     font-size: 1.6rem;
@@ -329,6 +330,7 @@ a, button {
   .menu .menu__sub-link-wrap {
     border: none !important; }
   .menu .menu__sub-link {
+    font-weight: 500;
     padding: 15px 28px; } }
 
 @media (max-width: 480px) {
