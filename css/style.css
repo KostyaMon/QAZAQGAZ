@@ -225,6 +225,11 @@ a, button {
     z-index: 11;
   }
 }
+@media (max-width: 370px) {
+  .header .header__skyscraper1 {
+    margin-right: 0;
+  }
+}
 
 .menu .menu__icon {
   display: none;
@@ -893,13 +898,6 @@ a, button {
 }
 .footer .footer__text {
   margin-bottom: 12px;
-}
-@media (max-width: 1025px) {
-  .footer .footer__companies {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
 }
 @media (max-width: 480px) {
   .footer .footer__body {

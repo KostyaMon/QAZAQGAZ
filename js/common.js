@@ -101,6 +101,18 @@ document.addEventListener('DOMContentLoaded', function () {
 		body.style.paddingRight = '0px';
 	})
 });
+
+//dropdown
+const menuItem3Dropdown = document.getElementById('menu__item3_dropdown');
+const menuSubList = document.querySelector('.menu__sub-list');
+const mediaQuery992 = window.matchMedia('(max-width: 992px)')
+
+menuItem3Dropdown.addEventListener('click', (e) => {
+	if(mediaQuery992.matches) {
+		e.preventDefault();
+		menuSubList.classList.toggle("_active");
+	}
+});
 //=================================================
 
 // Menu Burger
