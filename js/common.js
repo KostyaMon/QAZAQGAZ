@@ -1,9 +1,9 @@
 new Swiper('.swiper', {
 	simulateTouch: true,
 	slidesPerView: "auto",
-	autoHeight: true,
+	// autoHeight: true,
 	watchOverflow: true,
-	spaceBetween: 24
+	spaceBetween: 24,
 });
 
 // let menuArrows = document.querySelectorAll('.menu__arrow');
