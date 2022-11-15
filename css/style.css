@@ -1104,12 +1104,13 @@ a, button {
     font-size: 1.4rem;
   }
   .quiz .quiz__logo {
-    margin-top: 40px;
+    margin: 40px 0;
   }
   .quiz .quiz__logo img {
     max-width: 170px;
   }
   .quiz .quiz__question {
+    margin-bottom: 40px;
     font-size: 2.4rem;
   }
   .quiz .quiz__answers {
@@ -1144,21 +1145,7 @@ a, button {
 .step1 .answers-list-left .quiz__span {
   margin-left: auto;
 }
-@media (min-width: 601px) {
-  .step1 .quiz__logo {
-    margin-bottom: 80px;
-  }
-  .step1 .quiz__question {
-    margin-bottom: 40px;
-  }
-}
 @media (max-width: 600px) {
-  .step1 .quiz__logo {
-    margin-bottom: 35px;
-  }
-  .step1 .quiz__question {
-    margin-bottom: 22px;
-  }
   .step1 .quiz__answers {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1174,42 +1161,6 @@ a, button {
   }
   .step1 .quiz__radio-btn .quiz__span {
     margin: 0 auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .step2 .quiz__logo {
-    margin-bottom: 90px;
-  }
-  .step2 .quiz__question {
-    margin-bottom: 40px;
-  }
-}
-
-@media (max-width: 480px) {
-  .step3 .quiz__logo {
-    margin-bottom: 51px;
-  }
-  .step3 .quiz__question {
-    margin-bottom: 42px;
-  }
-}
-
-@media (max-width: 480px) {
-  .step4 .quiz__logo {
-    margin-bottom: 62px;
-  }
-  .step4 .quiz__question {
-    margin-bottom: 41px;
-  }
-}
-
-@media (max-width: 480px) {
-  .step5 .quiz__logo {
-    margin-bottom: 62px;
-  }
-  .step5 .quiz__question {
-    margin-bottom: 36px;
   }
 }
 
