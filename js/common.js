@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	
 	quizBtbStart.addEventListener('click', (e) => {
 		e.preventDefault()
-		quiz.style.backgroundImage = "url('img/interview-bg6.jpg')"
+		quiz.style.backgroundImage = "url('img/interview-bg6.webp')"
 		setTimeout(() => {
 			body.style.paddingRight = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
 			document.body.classList.add("_lock");
@@ -56,14 +56,14 @@ document.addEventListener('DOMContentLoaded', function () {
 	
 	quizBtnSubmit.addEventListener('click', (e) => {
 		e.preventDefault()
-		quiz.style.backgroundImage = "url('img/interview-bg1.jpg')"
+		quiz.style.backgroundImage = "url('img/interview-bg1.webp')"
 		quizForm.classList.remove("form_open");
 		step1.classList.add("quiz_open");
 	});
 	
 	step1Btn.addEventListener('click', () => {
 		setTimeout(() => {
-			quiz.style.backgroundImage = "url('img/interview-bg2.jpg')"
+			quiz.style.backgroundImage = "url('img/interview-bg2.webp')"
 			step1.classList.remove("quiz_open");
 		}, 300)
 		step2.classList.add("quiz_open");
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	
 	step2Btn.addEventListener('click', () => {
 		setTimeout(() => {
-			quiz.style.backgroundImage = "url('img/interview-bg3.jpg')"
+			quiz.style.backgroundImage = "url('img/interview-bg3.webp')"
 			step2.classList.remove("quiz_open");
 		}, 300)
 		step3.classList.add("quiz_open");
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	
 	step3Btn.addEventListener('click', () => {
 		setTimeout(() => {
-			quiz.style.backgroundImage = "url('img/interview-bg4.jpg')"
+			quiz.style.backgroundImage = "url('img/interview-bg4.webp')"
 			step3.classList.remove("quiz_open");
 		}, 300)
 		step4.classList.add("quiz_open");
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	
 	step4Btn.addEventListener('click', () => {
 		setTimeout(() => {
-			quiz.style.backgroundImage = "url('img/interview-bg5.jpg')"
+			quiz.style.backgroundImage = "url('img/interview-bg5.webp')"
 			step4.classList.remove("quiz_open");
 		}, 300)
 		step5.classList.add("quiz_open");
